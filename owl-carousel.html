@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- These are for carousel slider-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/8j9jwcD/amazon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Owl carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+</head>
+<style>
+    .owl-item .item {
+        height: auto;
+    }
+    
+    .owl-carousel .owl-stage {
+        display: flex;
+    }
+    
+    .owl-carousel .owl-item img {
+        width: auto;
+        margin: auto;
+    }
+</style>
+
+<body>
+
+    <main>
+        <div class="display-panel-1" style="background-color: white; margin: 10px;">
+            <div>
+                <h2 style="padding: 10px; border-bottom: 2px solid rgb(189, 182, 182);">More top picks for you</h2>
+            </div>
+            <div class="owl-carousel owl-theme" id="display-2">
+                <a href="#">
+                    <div class="item">
+                        <!--Here item could be card or image or any div-->
+                        <img src="https://m.media-amazon.com/images/I/71MLEjmErJS._AC_SY200_.jpg" alt="img">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/71gNYVsyi8L._AC_SY200_.jpg" alt="img">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/51zJpZ9gjrL._AC_SY200_.jpg" alt="img">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/61Y30DpqRVL._AC_SY200_.jpg" alt="img">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41oEEpCeNUL._AC_SY200_.jpg" alt="img">
+                    </div>
+                </a>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41goOkRREJL._AC_SY200_.jpg" alt="img">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/71Pln-8awPL._AC_SY200_.jpg" alt="img">
+                    </div>
+                </a>
+
+
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            //From here we can control and new feature to the owl carousel using js
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: true,
+                dots: false,
+                navText: ["<div class='glyphicon glyphicon-chevron-left' style='position: absolute; top: 30%; font-size:30px; left: 20px;'></div>", "<div class='glyphicon glyphicon-chevron-right'  style='position: absolute; top: 30%; font-size:30px; right: 20px;'></div>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+    </main>
+
+</body>
+
+</html>

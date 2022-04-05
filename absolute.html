@@ -5,83 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        
-        .container {
-            position: relative;
-            top: 100px;
-            left: 100px;
-            width: 600px;
-            height: 600px;
-            border: 5px solid blue;
-        }
-        
-        .box {
-            width: 100px;
-            height: 100px;
-            border: 5px solid red;
-            margin: 10px;
-            padding: 10px;
-            display: inline-block;
-        }
-        
-        #box1 {
-            position: absolute;
-            top: 250px;
-            right: 10px;
-        }
-        
-        #box2 {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-        }
-        
-        #box3 {
-            position: relative;
-            top: 10px;
-            left: 10px;
-        }
-    </style>
+    <title>Position Properties</title>
 </head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .bucket {
+        border: 3px solid red;
+        padding: 10px;
+        margin: 10px;
+        width: 700px;
+        height: 700px;
+    }
+    
+    .drop {
+        display: inline-block;
+        border: 3px solid red;
+        padding: 10px;
+        margin: 10px;
+        height: 100px;
+        width: 100px;
+    }
+    
+    #drop1 {
+        position: absolute;
+        background-color: red;
+        top: 500px;
+        left: 10px;
+    }
+</style>
 
 <body>
-    <div class="container">
-        <div class="box" id="box1">1</div>
-        <div class="box" id="box2">2</div>
-        <div class="box" id="box3">3</div>
-        <div class="box" id="box4">4</div>
-        <div class="box" id="box5">5</div>
+    <div class="garbage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis maiores cumque, deleniti repellat quas nesciunt nobis laboriosam voluptas excepturi optio illum deserunt commodi earum minus tempore voluptate nostrum eius? Suscipit quisquam
+        alias, exercitationem porro mollitia aperiam? Necessitatibus, reiciendis. Doloremque aperiam neque maxime harum cumque temporibus repellendus consectetur nemo? Repudiandae dolorum alias deleniti, accusantium asperiores labore! Obcaecati qui nostrum
+        error fugit amet sunt quaerat dicta, reprehenderit minus facere sed molestiae velit harum dolore distinctio accusantium est nobis illo odit aspernatur! Aspernatur, sint quos cupiditate vel eos quisquam iure nesciunt unde repellat quas vitae placeat
+        non odit ex amet consequatur accusamus quam aliquam fugit, velit nisi consequuntur ipsum! Recusandae ipsam adipisci corrupti natus ratione porro illum, dolore quidem provident eum optio! Laboriosam eaque, nulla pariatur, ducimus a consequuntur
+        dolore tempore ad soluta quam omnis necessitatibus accusamus sunt, dolorum debitis? Velit cum laborum fugiat aut aperiam. Id voluptate accusamus inventore cupiditate voluptatum quis aliquam ipsam quam perferendis! Itaque quidem quam impedit eum.
+        Quasi dolores aliquam, voluptas odit consequatur odio praesentium pariatur suscipit quaerat, possimus voluptatibus hic nihil soluta corporis ratione quas. Dicta, nostrum explicabo. Nobis voluptatum harum optio hic numquam sed delectus deleniti
+        ex ea debitis. Voluptatum, aliquid fugit? Nam maxime dolores deserunt perspiciatis. Exercitationem voluptas sequi nobis, natus voluptate aliquid amet commodi libero deserunt esse rerum! Voluptatum dolor pariatur alias doloremque perspiciatis quos
+        fugiat debitis repellat laborum neque, reiciendis omnis necessitatibus reprehenderit nisi? Nobis cupiditate illum odio. Reprehenderit laborum dolore magnam unde ea porro optio, minima maiores ipsa ex maxime tenetur libero earum sit. Eum atque
+        a ratione, possimus earum facere asperiores totam fugit enim repellendus numquam quam ducimus odit. Aperiam aut quasi deserunt possimus dicta repudiandae alias odio repellat, quae cum porro vero blanditiis ducimus voluptatibus nemo iure, iusto
+        eius incidunt similique natus vel, molestias reprehenderit libero. Nobis quisquam cupiditate cumque a accusantium corporis, obcaecati voluptas? Obcaecati inventore magni soluta debitis harum exercitationem unde dicta laboriosam labore? Cum tenetur,
+        voluptatem officiis odit quam ipsum, voluptas magnam laborum quidem modi, et sapiente? Veniam harum, suscipit, sunt corporis, quos cumque repudiandae vero aliquam repellendus sed laboriosam nihil.
     </div>
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus cumque, dolore, vero officiis reprehenderit ipsam deserunt laudantium aperiam repellendus itaque ab molestias accusantium officia quo veritatis quia, nulla illum! Lorem, ipsum
-        dolor sit amet consectetur adipisicing elit. Atque quibusdam, delectus officia architecto sunt cumque. Beatae voluptate dolor quis in rem. Repellat optio quia earum cum laudantium facilis enim dolores debitis labore obcaecati expedita, dolore
-        maxime eligendi placeat vero, dolorem consequuntur at. Aspernatur aut ipsum ad? Blanditiis quam at tempora. Non iusto nisi ullam enim aut exercitationem maxime inventore sint, nulla illum est alias autem iste deserunt dignissimos labore, aspernatur
-        necessitatibus. Alias numquam minima dicta quasi modi ea dolorem qui neque nostrum, minus dolorum delectus, ratione distinctio nam molestias ipsa repudiandae facere eveniet vel et id at sapiente aut expedita! Eveniet facilis nisi suscipit, ullam
-        incidunt quam tempore voluptatibus deleniti, repellat magni numquam, ab eligendi dolor excepturi voluptates? Harum obcaecati enim est, dolorum modi corporis iste soluta doloribus corrupti quibusdam quidem ullam alias et excepturi molestiae tempore
-        aliquam molestias? Nam, quos rem ex tenetur maiores adipisci perferendis cum, debitis dolores quae, assumenda sit doloremque deleniti provident velit quod molestias culpa eligendi temporibus consequuntur! Ipsum, iusto tenetur eos ipsam corporis
-        illum maxime at quo, laborum eaque perferendis ut amet. Voluptatum tempora, tenetur illum est deserunt necessitatibus itaque omnis excepturi, odio nobis, alias nisi eaque qui dicta cum a ducimus sed animi laboriosam eligendi amet fuga? Animi,
-        corrupti dicta tempora obcaecati a quasi qui doloribus repellat nostrum aliquid aliquam, vel consectetur, delectus at maxime dolorem molestias fugiat quod! Soluta tempora dolore aliquid doloribus at impedit repellat distinctio esse. Distinctio
-        mollitia itaque obcaecati eos hic rem nesciunt harum, odio nulla veniam voluptas cupiditate voluptate sed nihil esse labore voluptatibus fuga accusantium excepturi, corporis consectetur? Exercitationem nesciunt architecto expedita! Distinctio
-        in officia omnis, itaque dolorem iusto quaerat amet voluptas inventore! Fugiat, officia voluptatibus ab repellendus iure eligendi id vitae suscipit accusantium similique libero nemo? Reiciendis voluptates ab rem laboriosam non, tempore quibusdam
-        pariatur iure quo hic repellat doloribus quos tenetur vitae accusantium quisquam veniam exercitationem labore architecto fugit animi eius temporibus, dicta inventore. Fugiat harum error vero voluptatibus laborum quis suscipit unde provident expedita.
-        Optio doloremque incidunt assumenda, ea corporis voluptates laborum eos laboriosam doloribus culpa omnis labore aliquam cumque esse consectetur accusamus vel reprehenderit velit hic perspiciatis a tempora quia. Eligendi dolorem, minima ea enim
-        repellat distinctio voluptatum alias sit sequi soluta totam eaque voluptas, doloremque dolor adipisci quisquam atque quas optio! Velit nam praesentium quaerat temporibus dolorum, tempora fugiat voluptates, in reprehenderit odit, amet molestias
-        minus ipsa id. Et dignissimos nam error ipsam totam sunt obcaecati, dolores illo neque nulla nihil placeat excepturi corrupti illum aut, culpa impedit tempore veritatis, doloribus hic voluptatem atque. Repellat perspiciatis ipsum porro eligendi.
-        Consequatur aperiam quo iusto aut laboriosam, assumenda aliquid reiciendis odio id facere tenetur consectetur esse nesciunt vel sunt ipsam ex obcaecati quis eos quos sint dignissimos dolore. Alias iure eveniet molestias vero asperiores veniam
-        fugiat voluptatibus sequi mollitia quasi, ab sed facere aliquid vitae maxime corporis cumque consequuntur deserunt possimus similique! Obcaecati itaque fuga sequi ea inventore libero voluptatem ducimus nam rerum odit! Corporis incidunt explicabo
-        laborum deleniti quasi minus tempore ad quisquam, aut iure, doloribus adipisci? Dolore cum voluptatum hic inventore fugiat deleniti placeat nemo! Delectus, culpa quibusdam? A nam tenetur neque, quisquam, blanditiis corporis quae veritatis tempora
-        saepe, ad omnis necessitatibus assumenda facere odit ex. Voluptatum, rerum quisquam! Nisi consectetur repudiandae officiis harum perferendis debitis aperiam hic quae commodi natus! Totam sed nulla deleniti quasi distinctio necessitatibus quos
-        numquam! Repudiandae excepturi voluptas nisi! Assumenda illum impedit dicta expedita iusto vitae laborum, itaque eveniet vel omnis soluta. Necessitatibus omnis, numquam similique sequi eveniet facilis consequatur nesciunt facere perspiciatis id
-        quo eos labore consectetur aliquid! Eos quibusdam aliquid quos necessitatibus excepturi, a itaque at voluptatem incidunt animi corporis obcaecati qui? Qui saepe ut libero ab distinctio corporis iure, delectus ea nisi doloribus dicta optio placeat
-        quisquam illum, beatae facilis aspernatur iste odit pariatur harum nobis! Pariatur expedita rem architecto veritatis. Beatae non reiciendis blanditiis repudiandae, repellat optio adipisci est quas culpa hic nihil cumque ea quod minima sint ipsum
-        voluptates! In fuga odio commodi aspernatur molestias animi aut quod velit adipisci soluta amet, tenetur ipsam vel nisi hic dolorum harum fugit?
+    <div class="bucket">
+        <div class="drop" id="drop1">1</div>
+        <div class="drop" id="drop2">2</div>
+        <div class="drop" id="drop5">3</div>
+        <div class="drop" id="drop3">4</div>
+        <div class="drop" id="drop4">5</div>
     </div>
 </body>
 

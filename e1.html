@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Great experience with the position absolute , fixed , static and sticky-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .garbage {
+        padding: 20px;
+        text-align: center;
+        border: 2px solid grey;
+    }
+    
+    .container {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid cyan;
+        background-color: rgb(223, 217, 217);
+        height: 700px;
+        width: 700px;
+        position: relative;
+    }
+    
+    .child {
+        margin: 10px;
+        display: inline-block;
+        position: relative;
+        color: white;
+        height: 100px;
+        width: 100px;
+    }
+    
+    #child-1 {
+        background-color: blue;
+        position: absolute;
+        top: 70px;
+        left: 70px;
+        z-index: 2;
+    }
+    
+    #child-2 {
+        background-color: red;
+    }
+    
+    #child-3 {
+        background-color: black;
+    }
+    
+    #child-4 {
+        background-color: violet;
+        position: sticky;
+        top: 0px;
+        left: 240px;
+    }
+    
+    #child-5 {
+        background-color: green;
+        position: absolute;
+        top: 135px;
+        left: 135px;
+        /* z-index: 2; */
+    }
+    
+    #child-6 {
+        background-color: orange;
+        position: fixed;
+        top: 70vh;
+        right: 5vw;
+        /* z-index: -1; */
+    }
+    
+    #child-7 {
+        background-color: purple;
+        position: absolute;
+        top: 135px;
+        left: 10px;
+    }
+</style>
+
+<body>
+    <div class="garbage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore non inventore enim hic maxime accusantium nisi minus blanditiis quibusdam illo neque explicabo quis ratione quam temporibus sint earum rem iusto qui minima, necessitatibus reiciendis
+        suscipit. A eum at sit incidunt minus, totam, nisi nemo ratione veritatis dolor enim fugit quibusdam facere laudantium obcaecati numquam aperiam reiciendis rerum dolores minima pariatur, laborum quod! Ullam corporis esse minus aspernatur ipsam,
+        nihil illum nam amet tempore praesentium facilis magnam odit ad tenetur at similique dolorem rerum suscipit labore sunt? Voluptatum quo saepe corrupti, voluptatem unde possimus odio, officiis quod, illum iure sequi quae. Sunt dolore enim provident
+        ipsam quas corrupti, nemo voluptatum aspernatur dignissimos, amet minus quae expedita, consequuntur unde tenetur id? Dolorum molestiae inventore dignissimos veniam odit temporibus quis? Architecto doloremque sequi obcaecati sit nam ratione explicabo
+        maiores delectus, laudantium molestias consectetur corrupti, voluptatem sapiente, recusandae saepe provident! Laborum modi tenetur quibusdam, cupiditate veritatis rerum eius suscipit aspernatur! Rem accusantium nobis quisquam ducimus alias, a
+        eum enim quae quo totam maxime optio, facere sequi saepe voluptate distinctio repudiandae sed corporis! Minima quisquam quae vitae fugit voluptatum, ea veritatis natus, provident illum, nostrum alias reprehenderit accusamus omnis illo. Minus a
+        ipsa possimus rem libero nisi eaque maxime. Dolore, sint libero praesentium vitae nam cum earum eveniet a enim ad fugit sapiente et cupiditate quod at inventore quaerat alias ipsa itaque commodi, laudantium amet rem illo incidunt.
+    </div>
+    <div class="garbage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore non inventore enim hic maxime accusantium nisi minus blanditiis quibusdam illo neque explicabo quis ratione quam temporibus sint earum rem iusto qui minima, necessitatibus reiciendis
+        suscipit. A eum at sit incidunt minus, totam, nisi nemo ratione veritatis dolor enim fugit quibusdam facere laudantium obcaecati numquam aperiam reiciendis rerum dolores minima pariatur, laborum quod! Ullam corporis esse minus aspernatur ipsam,
+        nihil illum nam amet tempore praesentium facilis magnam odit ad tenetur at similique dolorem rerum suscipit labore sunt? Voluptatum quo saepe corrupti, voluptatem unde possimus odio, officiis quod, illum iure sequi quae. Sunt dolore enim provident
+        ipsam quas corrupti, nemo voluptatum aspernatur dignissimos, amet minus quae expedita, consequuntur unde tenetur id? Dolorum molestiae inventore dignissimos veniam odit temporibus quis? Architecto doloremque sequi obcaecati sit nam ratione explicabo
+        maiores delectus, laudantium molestias consectetur corrupti, voluptatem sapiente, recusandae saepe provident! Laborum modi tenetur quibusdam, cupiditate veritatis rerum eius suscipit aspernatur! Rem accusantium nobis quisquam ducimus alias, a
+        eum enim quae quo totam maxime optio, facere sequi saepe voluptate distinctio repudiandae sed corporis! Minima quisquam quae vitae fugit voluptatum, ea veritatis natus, provident illum, nostrum alias reprehenderit accusamus omnis illo. Minus a
+        ipsa possimus rem libero nisi eaque maxime. Dolore, sint libero praesentium vitae nam cum earum eveniet a enim ad fugit sapiente et cupiditate quod at inventore quaerat alias ipsa itaque commodi, laudantium amet rem illo incidunt.
+    </div>
+    <div class="garbage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore non inventore enim hic maxime accusantium nisi minus blanditiis quibusdam illo neque explicabo quis ratione quam temporibus sint earum rem iusto qui minima, necessitatibus reiciendis
+        suscipit. A eum at sit incidunt minus, totam, nisi nemo ratione veritatis dolor enim fugit quibusdam facere laudantium obcaecati numquam aperiam reiciendis rerum dolores minima pariatur, laborum quod! Ullam corporis esse minus aspernatur ipsam,
+        nihil illum nam amet tempore praesentium facilis magnam odit ad tenetur at similique dolorem rerum suscipit labore sunt? Voluptatum quo saepe corrupti, voluptatem unde possimus odio, officiis quod, illum iure sequi quae. Sunt dolore enim provident
+        ipsam quas corrupti, nemo voluptatum aspernatur dignissimos, amet minus quae expedita, consequuntur unde tenetur id? Dolorum molestiae inventore dignissimos veniam odit temporibus quis? Architecto doloremque sequi obcaecati sit nam ratione explicabo
+        maiores delectus, laudantium molestias consectetur corrupti, voluptatem sapiente, recusandae saepe provident! Laborum modi tenetur quibusdam, cupiditate veritatis rerum eius suscipit aspernatur! Rem accusantium nobis quisquam ducimus alias, a
+        eum enim quae quo totam maxime optio, facere sequi saepe voluptate distinctio repudiandae sed corporis! Minima quisquam quae vitae fugit voluptatum, ea veritatis natus, provident illum, nostrum alias reprehenderit accusamus omnis illo. Minus a
+        ipsa possimus rem libero nisi eaque maxime. Dolore, sint libero praesentium vitae nam cum earum eveniet a enim ad fugit sapiente et cupiditate quod at inventore quaerat alias ipsa itaque commodi, laudantium amet rem illo incidunt.
+    </div>
+    <div class="container">
+        <div class="child" id="child-1">1</div>
+        <div class="child" id="child-2">2</div>
+        <div class="child" id="child-3">3</div>
+        <div class="child" id="child-4">4</div>
+        <div class="child" id="child-5">5</div>
+        <div class="child" id="child-6">6</div>
+        <div class="child" id="child-7">7</div>
+    </div>
+    <div class="garbage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore non inventore enim hic maxime accusantium nisi minus blanditiis quibusdam illo neque explicabo quis ratione quam temporibus sint earum rem iusto qui minima, necessitatibus reiciendis
+        suscipit. A eum at sit incidunt minus, totam, nisi nemo ratione veritatis dolor enim fugit quibusdam facere laudantium obcaecati numquam aperiam reiciendis rerum dolores minima pariatur, laborum quod! Ullam corporis esse minus aspernatur ipsam,
+        nihil illum nam amet tempore praesentium facilis magnam odit ad tenetur at similique dolorem rerum suscipit labore sunt? Voluptatum quo saepe corrupti, voluptatem unde possimus odio, officiis quod, illum iure sequi quae. Sunt dolore enim provident
+        ipsam quas corrupti, nemo voluptatum aspernatur dignissimos, amet minus quae expedita, consequuntur unde tenetur id? Dolorum molestiae inventore dignissimos veniam odit temporibus quis? Architecto doloremque sequi obcaecati sit nam ratione explicabo
+        maiores delectus, laudantium molestias consectetur corrupti, voluptatem sapiente, recusandae saepe provident! Laborum modi tenetur quibusdam, cupiditate veritatis rerum eius suscipit aspernatur! Rem accusantium nobis quisquam ducimus alias, a
+        eum enim quae quo totam maxime optio, facere sequi saepe voluptate distinctio repudiandae sed corporis! Minima quisquam quae vitae fugit voluptatum, ea veritatis natus, provident illum, nostrum alias reprehenderit accusamus omnis illo. Minus a
+        ipsa possimus rem libero nisi eaque maxime. Dolore, sint libero praesentium vitae nam cum earum eveniet a enim ad fugit sapiente et cupiditate quod at inventore quaerat alias ipsa itaque commodi, laudantium amet rem illo incidunt.
+    </div>
+    <div class="garbage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore non inventore enim hic maxime accusantium nisi minus blanditiis quibusdam illo neque explicabo quis ratione quam temporibus sint earum rem iusto qui minima, necessitatibus reiciendis
+        suscipit. A eum at sit incidunt minus, totam, nisi nemo ratione veritatis dolor enim fugit quibusdam facere laudantium obcaecati numquam aperiam reiciendis rerum dolores minima pariatur, laborum quod! Ullam corporis esse minus aspernatur ipsam,
+        nihil illum nam amet tempore praesentium facilis magnam odit ad tenetur at similique dolorem rerum suscipit labore sunt? Voluptatum quo saepe corrupti, voluptatem unde possimus odio, officiis quod, illum iure sequi quae. Sunt dolore enim provident
+        ipsam quas corrupti, nemo voluptatum aspernatur dignissimos, amet minus quae expedita, consequuntur unde tenetur id? Dolorum molestiae inventore dignissimos veniam odit temporibus quis? Architecto doloremque sequi obcaecati sit nam ratione explicabo
+        maiores delectus, laudantium molestias consectetur corrupti, voluptatem sapiente, recusandae saepe provident! Laborum modi tenetur quibusdam, cupiditate veritatis rerum eius suscipit aspernatur! Rem accusantium nobis quisquam ducimus alias, a
+        eum enim quae quo totam maxime optio, facere sequi saepe voluptate distinctio repudiandae sed corporis! Minima quisquam quae vitae fugit voluptatum, ea veritatis natus, provident illum, nostrum alias reprehenderit accusamus omnis illo. Minus a
+        ipsa possimus rem libero nisi eaque maxime. Dolore, sint libero praesentium vitae nam cum earum eveniet a enim ad fugit sapiente et cupiditate quod at inventore quaerat alias ipsa itaque commodi, laudantium amet rem illo incidunt.
+    </div>
+    <div class="garbage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore non inventore enim hic maxime accusantium nisi minus blanditiis quibusdam illo neque explicabo quis ratione quam temporibus sint earum rem iusto qui minima, necessitatibus reiciendis
+        suscipit. A eum at sit incidunt minus, totam, nisi nemo ratione veritatis dolor enim fugit quibusdam facere laudantium obcaecati numquam aperiam reiciendis rerum dolores minima pariatur, laborum quod! Ullam corporis esse minus aspernatur ipsam,
+        nihil illum nam amet tempore praesentium facilis magnam odit ad tenetur at similique dolorem rerum suscipit labore sunt? Voluptatum quo saepe corrupti, voluptatem unde possimus odio, officiis quod, illum iure sequi quae. Sunt dolore enim provident
+        ipsam quas corrupti, nemo voluptatum aspernatur dignissimos, amet minus quae expedita, consequuntur unde tenetur id? Dolorum molestiae inventore dignissimos veniam odit temporibus quis? Architecto doloremque sequi obcaecati sit nam ratione explicabo
+        maiores delectus, laudantium molestias consectetur corrupti, voluptatem sapiente, recusandae saepe provident! Laborum modi tenetur quibusdam, cupiditate veritatis rerum eius suscipit aspernatur! Rem accusantium nobis quisquam ducimus alias, a
+        eum enim quae quo totam maxime optio, facere sequi saepe voluptate distinctio repudiandae sed corporis! Minima quisquam quae vitae fugit voluptatum, ea veritatis natus, provident illum, nostrum alias reprehenderit accusamus omnis illo. Minus a
+        ipsa possimus rem libero nisi eaque maxime. Dolore, sint libero praesentium vitae nam cum earum eveniet a enim ad fugit sapiente et cupiditate quod at inventore quaerat alias ipsa itaque commodi, laudantium amet rem illo incidunt.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position the</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .child {
+        width: 100px;
+        position: relative;
+        height: 100px;
+        border: 2px solid black;
+        padding: 10px;
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    #child1 {
+        z-index: 2;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+    }
+    
+    #child3 {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 3;
+        background-color: green;
+    }
+    
+    #child2 {
+        background-color: cyan;
+        height: 300px;
+        width: 300px;
+    }
+    
+    .container {
+        width: 700px;
+        padding: 10px;
+        margin: 10px;
+        height: 700px;
+        border: 2px solid red;
+        position: relative;
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <div class="garbage">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias suscipit vero libero qui, incidunt nobis officia culpa. Quas quasi iusto nemo id officiis sequi soluta atque, ullam et fuga ab tenetur nisi praesentium doloremque repellat consequatur.
+        A iusto vel quas deserunt provident quam nesciunt harum neque assumenda voluptatem dolor ducimus, alias magnam eaque atque, magni iure asperiores. Temporibus, eius ipsa quidem impedit, nesciunt facere iste possimus eveniet veniam quisquam beatae
+        exercitationem officiis repellat ab velit asperiores enim natus quis, voluptatem quod repellendus quo quaerat atque. Minima explicabo distinctio error placeat velit itaque quos iusto, commodi soluta? Quasi magnam nihil iure laudantium vero atque
+        recusandae sit ad! Corrupti pariatur accusamus laudantium omnis vitae aut repellendus quidem minus blanditiis dolorum cum cupiditate consequuntur, necessitatibus ad! Mollitia eos, cum blanditiis cupiditate illo corporis amet illum ipsa, aperiam,
+        labore aliquam iusto atque laudantium. Numquam, quam voluptatibus! Sunt, natus! Cumque quod officiis possimus consectetur iusto quis molestiae dolorum? Odit tempora, praesentium perferendis nesciunt ut tenetur nostrum vel eos totam. Sed expedita
+        officiis qui dolor ipsam quas natus maiores recusandae delectus amet. Eos voluptatem laboriosam quia nostrum neque est suscipit! Voluptas fugit sequi optio. Dolorum distinctio mollitia ex sed doloremque omnis, vero est deserunt sit. Numquam saepe
+        maiores expedita vero dicta minima? Sapiente dolorum qui, animi voluptates suscipit itaque tempora eligendi est aspernatur saepe aliquam adipisci doloremque consequatur soluta, sequi maiores tempore praesentium excepturi voluptatem culpa eos unde
+        sunt quibusdam. Non minus, alias voluptatibus, possimus laudantium quod ipsam qui recusandae ad dolore architecto, suscipit voluptate molestiae officiis dignissimos cumque culpa temporibus libero amet corrupti odio natus eligendi maxime? Ab, dolore
+        accusamus nobis esse asperiores laborum quibusdam, cum doloribus molestiae, maiores blanditiis autem optio aperiam nam omnis sint. Provident totam porro nobis suscipit mollitia a labore minima possimus, iusto, odio velit id quidem molestias nesciunt
+        eius excepturi iure reprehenderit nemo nostrum repellat, deleniti vitae. Quam quos dignissimos esse repellat neque dolores cum est, eaque nihil quidem ab amet exercitationem obcaecati molestias, laudantium rem. Distinctio ipsa sed corporis quaerat
+        inventore placeat blanditiis maxime quis similique, repellat, voluptates vero qui consequuntur ut doloribus iusto.
+    </div>
+    <div class="container">
+        <a href="https://www.reddit.com/">
+            <div class="child" id="child1">1</div>
+        </a>
+        <a href="https://www.facebook.com/">
+            <div class="child" id="child2">2</div>
+        </a>
+        <a href="https://www.zomato.com/">
+            <div class="child" id="child3">3</div>
+        </a>
+        <a href="https://www.instagram.com/">
+            <div class="child" id="child4">4</div>
+        </a>
+        <a href="https://www.snapchat.com/">
+            <div class="child" id="child5">5</div>
+        </a>
+    </div>
+</body>
+
+</html>
