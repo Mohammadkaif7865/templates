@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+</head>
+<style>
+    .container {
+        width: 700px;
+        height: 700px;
+        padding: 10px;
+        border: 1px solid blue;
+        position: relative;
+    }
+    
+    .item {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        position: relative;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid blueviolet;
+    }
+    
+    #item-1 {
+        background: blue;
+    }
+    
+    #item-2 {
+        background: red;
+    }
+    /*
+    // If the cube is directly inside the container:
+#container:hover > #cube { background-color: yellow; }
+
+// If cube is next to (after containers closing tag) the container:
+#container:hover + #cube { background-color: yellow; }
+
+// If the cube is somewhere inside the container:
+#container:hover #cube { background-color: yellow; }
+
+// If the cube is a sibling of the container:
+#container:hover ~ #cube { background-color: yellow; }
+     */
+    
+    #item-1:hover~#item-2 {
+        background-color: cyan;
+    }
+    
+    .garbage {
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+    }
+</style>
+
+<body>
+    <div class="garbage" id="garbage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis, ea accusantium sunt natus ut aut ab quidem fugiat. Deserunt quis error in nam quidem laudantium eius ipsa, architecto doloribus ipsum, distinctio tenetur explicabo ab sequi fuga,
+        ipsam placeat molestias suscipit sit! Excepturi libero eveniet non dolor optio quibusdam, est nulla fugiat sapiente culpa consectetur id nemo nobis similique maxime magni deleniti necessitatibus soluta nihil! Nihil nesciunt distinctio sunt eos
+        maxime explicabo iste et ad ratione? Doloribus numquam, asperiores ex adipisci, perspiciatis inventore accusamus cupiditate eius ducimus placeat sequi. Modi, praesentium cupiditate? Eius dolor explicabo nisi quos dolore cum fugit tempora ipsam
+        autem, eum amet nostrum excepturi libero, provident in nulla velit, quod culpa exercitationem debitis quia rerum placeat. Cum exercitationem omnis architecto perferendis quos accusantium iusto totam temporibus ducimus, mollitia voluptate aliquam,
+        dolore suscipit in autem rem a quidem hic corporis deleniti! Sunt repudiandae numquam, architecto repellat veniam facere quidem ea molestiae voluptatem dolores exercitationem optio obcaecati blanditiis maxime beatae ratione officiis similique
+        adipisci dolore at quasi eos accusamus illum? Nemo quam aperiam veniam nostrum a? Delectus totam fuga est odio dolorum voluptas voluptatum consequuntur minima, sequi incidunt optio aperiam iure nam atque consequatur tenetur eum similique perspiciatis
+        repellendus consectetur maxime beatae alias? Provident, odio. Sed id voluptates optio ut illo aliquid distinctio, delectus similique animi repellendus error minima! Nemo tempora illum saepe dignissimos, reprehenderit iste vero cumque, a maiores
+        tenetur quis laborum?
+    </div>
+    <div class="container">
+        <div class="item" id="item-1">One</div>
+        <div class="item" id="item-2">two</div>
+        <div class="item" id="item-3">four</div>
+        <div class="item" id="item-4">five</div>
+    </div>
+</body>
+
+</html>

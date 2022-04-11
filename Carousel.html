@@ -5,12 +5,30 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="onclick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+<style>
+    .like {
+        width: 100%;
+        height: 40px;
+        display: block;
+    }
+    
+    #like {
+        cursor: pointer;
+        font-size: 23px;
+        float: center;
+    }
+</style>
 
 <body>
+    <div class="like">
+        Do you like this video?<i class="bi bi-suit-heart-fill" type="button" onclick="like()" id="like"></i><span id="counts"></span>
+    </div>
 
     <div class="container">
         <h2>Carousel Example</h2>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe animation</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .kk {
+        width: 100%;
+        height: 200px;
+        border: 3px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subscribe {
+        height: 50px;
+        width: 150px;
+        text-align: center;
+        display: flex;
+    }
+    
+    #bell {
+        display: inline;
+        font-size: 25px;
+        cursor: pointer;
+        color: grey;
+    }
+    
+    .right {
+        display: none;
+        padding-top: 10px;
+        width: 30%;
+        height: 100%;
+        background-color: white;
+    }
+    
+    .left {
+        width: 70%;
+        height: 100%;
+        cursor: pointer;
+        background: red;
+        color: white;
+        font-size: 15px;
+        padding-top: 15px;
+    }
+</style>
+
+<body>
+    <div class="trash">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at tempore sequi voluptatum accusantium eligendi libero perferendis dolor placeat laudantium ducimus voluptatibus sunt, magnam est aliquam odit blanditiis optio vel corrupti nostrum illo.
+        Cupiditate, quaerat eum distinctio fuga error sed dicta ullam enim corrupti reiciendis quod, commodi ipsa porro, inventore aliquid est laudantium neque aut incidunt harum. Veniam aperiam maiores aspernatur. Veritatis voluptates excepturi minima,
+        quam temporibus fugiat nisi iusto? Possimus nemo dicta temporibus facere maxime voluptatibus nihil distinctio labore, et quidem laboriosam repudiandae eaque, voluptatum placeat accusamus harum reiciendis exercitationem qui sapiente praesentium.
+        Laboriosam ea incidunt rerum nam corporis commodi ipsum quas dolor quasi, molestias impedit porro ut fugit, odit totam natus repudiandae, pariatur odio animi at deleniti vero culpa nihil. Alias asperiores aut vero laborum error reiciendis nesciunt
+        officiis, ducimus eum. Voluptas laudantium assumenda architecto odit vitae tenetur explicabo aspernatur distinctio, molestiae impedit! Esse, eum atque. Corporis illum delectus minima sunt quam iste sed inventore ipsa magnam veniam, mollitia repellat
+        quae! Facere, nihil nisi accusantium dolores unde nobis aperiam mollitia quidem laudantium dolor omnis molestias, maiores, ab sapiente quisquam. Id architecto dolores, esse sint maiores modi eos, vel perspiciatis excepturi et numquam quas, atque
+        enim blanditiis autem veritatis?
+    </div>
+    <div class="kk">
+        <div class="subscribe">
+            <div class="left" type="button" id="sub" onclick="Subscribe()">
+                <span id="done-o-not">subscribe</span>
+            </div>
+            <div class="right" id="right-bell">
+                <i class="bi bi-bell-fill" id="bell" type="button" onclick="bellon()"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let x = 0;
+    let y = 0;
+
+    function Subscribe() {
+        if (x % 2 == 0) {
+            document.getElementById('sub').style.cssText = "color: black; background: white;";
+            document.getElementById('right-bell').style.display = "inline";
+            document.getElementById('done-o-not').innerHTML = "subscribed";
+        } else {
+            document.getElementById('sub').style.cssText = "color: white; background: red;";
+            document.getElementById('right-bell').style.display = "none";
+            document.getElementById('done-o-not').innerHTML = "subscribe";
+            document.getElementById('bell').style.color = "grey";
+            y = 0;
+        }
+        x++;
+    }
+
+    function bellon() {
+        if (y % 2 == 0) {
+            document.getElementById('bell').style.color = "blue";
+        } else {
+            document.getElementById('bell').style.color = "grey";
+        }
+        y++;
+    }
+</script>
+
+</html>
